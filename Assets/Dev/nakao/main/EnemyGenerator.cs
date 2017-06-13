@@ -11,7 +11,7 @@ public class EnemyGenerator : MonoBehaviour {
 	}
 	
 	void Generate(){
-		Instantiate (enemy);
+		//Instantiate (enemy);
 		GameObject child = Instantiate(enemy) as GameObject;
 		child.transform.parent = imageTarget.transform;
 		child.transform.localScale += new Vector3(0.5f, 0.5f, 0.5f);
