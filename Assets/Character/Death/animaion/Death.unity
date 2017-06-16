@@ -1057,6 +1057,7 @@ GameObject:
   m_Component:
   - component: {fileID: 653974635}
   - component: {fileID: 653974637}
+  - component: {fileID: 653974638}
   m_Layer: 8
   m_Name: NPC_2017
   m_TagString: Untagged
@@ -1073,7 +1074,7 @@ Animation:
   m_GameObject: {fileID: 653974636}
   m_Enabled: 1
   serializedVersion: 3
-  m_Animation: {fileID: 7400000, guid: 9979536c5d3a0c74bb5d4a868d67a714, type: 2}
+  m_Animation: {fileID: 7400000, guid: 30a94700fc405b04c98ed90e6b636671, type: 2}
   m_Animations:
   - {fileID: 7400000, guid: 2dbc5c7465fbc1e49ba93cf110bf51c5, type: 2}
   - {fileID: 7400000, guid: 7daa19993fbf11e46a51b250fabbfe1a, type: 2}
@@ -1096,6 +1097,23 @@ Animation:
   m_PlayAutomatically: 1
   m_AnimatePhysics: 0
   m_CullingType: 0
+--- !u!95 &653974638
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 653974636}
+  m_Enabled: 1
+  m_Avatar: {fileID: 9000000, guid: 21fd8d42272b5b14cb312fe56beff4bf, type: 3}
+  m_Controller: {fileID: 9100000, guid: 5e9b49fbc4b4b492598d27afb7853c14, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1 &693200912
 GameObject:
   m_ObjectHideFlags: 0

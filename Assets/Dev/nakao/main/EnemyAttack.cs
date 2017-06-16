@@ -6,16 +6,29 @@ public class EnemyAttack : MonoBehaviour {
 	public float count;
 	public bool standby = false;
 	// Use this for initialization
+	private Animator anim;
 	void Start () {
-
+		anim = GetComponent<Animator>();
 	}
 
 	// Update is called once per frame
 	void Update () {
 		Roop ();
-		if (count >= 1 && !standby) AttackSmall ();
-		if (count >= 3) AttackBig ();
+		/*if (count >= 1 && !standby) AttackSmall ();
+		if (count >= 3) AttackBig ();*/
+		if(count < 3){
+			anim.SetBool ("skill_1", false);
+		}
+		if (count >= 3) {
+			anim.SetBool ("skill_1", true);
+			AttackBig ();
+
+		}
+	
+
 	}
+	//
+	//anim.SetBool ("skill_1", false);
 
 	void Roop(){
 		count += Time.deltaTime * 1;
@@ -34,6 +47,7 @@ public class EnemyAttack : MonoBehaviour {
 		count = 0;
 		standby = false;
 		Debug.Log ("ビッグ");
+
 	}
 }
 
