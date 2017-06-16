@@ -23,12 +23,14 @@ public class EnemyAttack : MonoBehaviour {
 
 	void AttackSmall(){
 		Instantiate(ParticleManager.Instance.Create("EnergyExplosionMobile"), transform.position, Quaternion.identity);
-		count = 0;
+		//count = 0;
 		standby = true;
 		Debug.Log ("スモール");
 	}
 	void AttackBig(){
-		Instantiate(ParticleManager.Instance.Create("FrostBombMobile"), transform.position, Quaternion.identity);
+		//Instantiate(ParticleManager.Instance.Create("FrostBombMobile"), transform.position, Quaternion.identity);
+		Instantiate(ParticleManager.Instance.Create("FrostBombMobile"), new Vector3(0, 300, 0), Quaternion.identity);
+	
 		count = 0;
 		standby = false;
 		Debug.Log ("ビッグ");

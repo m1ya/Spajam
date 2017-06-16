@@ -17,5 +17,9 @@ public class EnemyBulletGenerator : MonoBehaviour {
 
 	public void Generate(){
 		Instantiate (bullet, this.transform.position, Quaternion.identity);
+
+
+		//transform.position = new Vector3(0, 500, 0);
+		//Instantiate (bullet, new Vector3(0, 0, 500), Quaternion.identity);
 	}
 }
