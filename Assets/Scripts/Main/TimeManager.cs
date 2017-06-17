@@ -36,6 +36,10 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 	    else time -= Time.deltaTime;
 	}
 
+	public void Init(){
+		time = timeLimit;
+	}
+
 	public void SetSlow(){
 		slow = true;
 	}

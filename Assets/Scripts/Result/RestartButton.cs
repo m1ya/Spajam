@@ -11,5 +11,6 @@ public class RestartButton : MonoBehaviour {
 	public void Restart(){
 		ScoreManager.Instance.Reset ();
 		MySceneManager.Instance.GoToStageSelect ();
+		TimeManager.Instance.Init ();
 	}
 }
