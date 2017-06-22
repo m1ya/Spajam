@@ -30,7 +30,6 @@ public class PlayerAttack : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		Debug.Log (sunderFlag);
 	}
 
 	public void Attack(string mes){
