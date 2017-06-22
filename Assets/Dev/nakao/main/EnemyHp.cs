@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyHp : MonoBehaviour {
-	int hp = 3;
+	public static int hp = 3;
 	// Use this for initialization
 	void Start () {
 		

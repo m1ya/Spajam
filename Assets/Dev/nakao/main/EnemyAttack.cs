@@ -14,8 +14,7 @@ public class EnemyAttack : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		Roop ();
-		/*if (count >= 1 && !standby) AttackSmall ();
-		if (count >= 3) AttackBig ();*/
+
 		if(count < 3){
 			anim.SetBool ("skill_1", false);
 		}
@@ -27,8 +26,6 @@ public class EnemyAttack : MonoBehaviour {
 	
 
 	}
-	//
-	//anim.SetBool ("skill_1", false);
 
 	void Roop(){
 		count += Time.deltaTime * 1;

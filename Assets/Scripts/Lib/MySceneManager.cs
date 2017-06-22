@@ -22,4 +22,8 @@ public class MySceneManager : SingletonMonoBehaviour<MySceneManager> {
 	public void GoToResult(){
 		SceneManager.LoadScene ("Result");
 	}
+
+	public void GoToResult_fail(){
+		SceneManager.LoadScene ("Result_fail");
+	}
 }

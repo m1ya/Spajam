@@ -7,7 +7,7 @@ public class TimeManager : SingletonMonoBehaviour<TimeManager> {
 	[SerializeField]
 	static float timeLimit = 60;
 	float time = timeLimit;
-	bool slow = false;
+	public static bool slow = false;
 	float slowTime = 5f;
 
 	// Update is called once per frame

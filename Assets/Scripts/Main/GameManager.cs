@@ -18,6 +18,10 @@ public class GameManager : MonoBehaviour {
 	public static void GameEnd(int score){
 		isPlaying = false;
 		ScoreManager.Instance.Set (score);
-		MySceneManager.Instance.GoToResult ();
+		if (EnemyHp.hp < 1) {
+			MySceneManager.Instance.GoToResult ();
+		} else {
+			MySceneManager.Instance.GoToResult_fail ();
+		}
 	}
 }

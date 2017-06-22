@@ -16,5 +16,7 @@ EditorBuildSettings:
     guid: 039e53811e8ac41d19f23c2c97999f2b
   - enabled: 1
     path: Assets/Scenes/Result.unity
-
+    guid: 47aa63c52b97a40f8a1ba5d473fe3aff
+  - enabled: 1
+    path: Assets/Scenes/Result_fail.unity
     guid: 00000000000000000000000000000000
